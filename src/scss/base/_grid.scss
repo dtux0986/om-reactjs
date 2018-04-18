@@ -1,0 +1,45 @@
+/**
+ * Grid
+ * -------------------------------------------------- */
+
+.container,
+.container-fluid {
+  &.o-inactive {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+.o-row-padded {
+  padding-top: 5rem; /*80px*/
+  padding-bottom: 5rem; /*80px*/
+}
+
+.o-row-centered {
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.o-col-left {
+
+}
+
+.o-col-right {
+
+}
+
+.o-border-top {
+  border-top: 1px solid $gray-200;
+}
+
+.o-border-right {
+  border-right: 1px solid $gray-200;
+}
+
+.o-border-bottom {
+  border-bottom: 1px solid $gray-200;
+}
+
+.o-border-left {
+  border-left: 1px solid $gray-200;
+}

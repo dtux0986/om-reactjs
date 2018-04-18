@@ -1,0 +1,29 @@
+/*
+Name: OM Starter HTML Template
+URI: https://github.com/dtux0986/om-starter-html-template.git
+Author: Tu Dinh Xuan
+Author URI: #
+Description: OM Starter HTML Template
+Version: 1.0.0
+Text Domain: om
+Domain Path: /languages/
+Tags: free, html5, css3, responsive, template, responsive
+License: GNU General Public License v3.0
+License URI: license.txt
+*/
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "base/global";
+@import "base/grid";
+@import "base/elements";
+
+@import "components/navigations";
+@import "components/card";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/pages";

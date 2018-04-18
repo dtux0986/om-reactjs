@@ -1,0 +1,166 @@
+/**
+ * Elements
+ * -------------------------------------------------- */
+
+/* Button */
+
+.btn {
+  border: none;
+  border-radius: 0;
+  padding: 1.0625rem 1.875rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: $primary;
+}
+
+.btn-secondary {
+  background-color: $secondary;
+}
+
+.btn-success {
+
+}
+
+.btn-danger {
+
+}
+
+.btn-warning {
+
+}
+
+.btn-info {
+
+}
+
+.btn-light {
+
+}
+
+.btn-dark {
+
+}
+
+/* Button Sizes */
+
+.btn-sm {
+  padding: 0.6875rem 1.25rem;
+}
+
+.btn-md {
+  padding: 1.0625rem 1.875rem;
+}
+
+.btn-lg {
+  padding: 1.6875rem 3.125rem;
+}
+
+/* Listing */
+.c-listing {
+
+  &__wrapper {
+
+  }
+
+  &__title {
+
+  }
+
+  ul {
+    li {
+      a {
+
+      }
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+.c-toggle {
+  display: none;
+
+  &,
+  &:after,
+  &:before,
+  & *,
+  & *:after,
+  & *:before,
+  & + .c-toggle-btn {
+    box-sizing: border-box;
+    &::selection {
+      background: none;
+    }
+  }
+
+  + .c-toggle-btn {
+    outline: 0;
+    display: block;
+    width: 3.75rem; /*60px*/
+    height: 1.8125rem; /*29px*/
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    &:after,
+    &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 40%;
+      height: 100%;
+    }
+
+    &:after {
+      left: 0.125rem; /*2px*/
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+
+  &:checked + .c-toggle-btn:after {
+    left: 58%;
+  }
+}
+
+.c-toggle-ios {
+  + .c-toggle-btn {
+    background: #dddddd;
+    border-radius: 2rem; /*36px*/
+    padding: 0.25rem; /*4px*/
+    transition: all .4s ease;
+
+    &:after {
+      border-radius: 2rem; /*36px*/
+      background: #fbfbfb;
+      transition: left .3s cubic-bezier(0.175, 0.885, 0.320, 1.275), padding .3s ease, margin .3s ease;
+    }
+
+    &:hover:after {
+      will-change: padding;
+    }
+
+    &:active {
+      box-shadow: inset 0 0 0 2rem #e8eae9;
+      &:after {
+        padding-right: 0.8rem;/*12.8px*/
+      }
+    }
+  }
+
+  &:checked + .c-toggle-btn {
+    background: $primary;
+    &:active {
+      box-shadow: none;
+      &:after {
+        margin-left: -0.8rem; /*-12.8px*/
+      }
+    }
+  }
+}

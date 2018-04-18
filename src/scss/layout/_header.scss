@@ -1,0 +1,41 @@
+/**
+ * Header
+ * -------------------------------------------------- */
+
+.site-header {
+
+  &__main {
+    padding: 3.125rem 0; /*50px*/
+  }
+
+  &__bottom {
+
+  }
+
+  .c-logo {
+    &__wrapper {
+      h3 {
+        margin: 0;
+        color: $primary;
+      }
+    }
+  }
+
+  .c-message {
+    padding: 0.625rem 0; /*10px*/
+    border-top: 1px dotted $gray-900;
+    border-bottom: 1px dotted $gray-900;
+    text-align: right;
+
+    &__wrapper {
+      p {
+        margin: 0;
+      }
+      a {
+        border-bottom: 1px dotted $primary;
+        font-weight: 700;
+        color: $primary;
+      }
+    }
+  }
+}
